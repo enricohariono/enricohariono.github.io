@@ -41,7 +41,7 @@
 
       .text {
         color: #fff;
-        font-size: 64px;
+        font-size: 48px;
         font-style: "Montserrat";
         padding: 8px 12px;
         position: absolute;
@@ -87,6 +87,10 @@
         from {opacity: .4} 
         to {opacity: 1}
       }
+      
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 24px}
+      } 
     </style>
   </head>
   <body>
