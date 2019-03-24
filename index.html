@@ -25,6 +25,69 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      /** {box-sizing: border-box;}*/
+      /*.mySlides {display: none;}*/
+      img {vertical-align: middle;}
+
+      .slideshow-container {
+        max-width: 1000px;
+        max-height: 900px;
+        position: relative;
+        margin: auto;
+        padding-bottom: 5em;
+      }
+
+      .text {
+        color: #fff;
+        font-size: 64px;
+        font-style: "Montserrat";
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .imgsize {
+        height: 600px;
+        width: 1500px;
+      }
+
+    
+      .dot {
+        text-align: center;
+        padding-left: 11.5em;
+        height: 10px;
+        width: 10px;
+        margin: 0 5px;
+        border-radius: 10%;
+        display: inline-block;
+        /*transition: #007bff 0.6s ease;*/
+      }
+
+      .post {
+        padding-right: 30em;
+      }
+
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+    </style>
   </head>
   <body>
 
@@ -190,85 +253,34 @@
             </div>
           </div>
           <div class="row no-gutters">
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="personal/Simg.jpg" class="image d-flex justify-content-center align-items-center" style="background-image: url('personal/Simg.jpg'); center 10%" data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text">
-              <h4 class="subheading">S Logo Design</h4>
-              <h2 class="heading">Even the all-powerful Pointing has no control</h2>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-              <p><a href="personal/Slogo.gif">View Project</a></p>
+          <!-- Automatic Image Slider -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img class="imgsize" src="personal/Simg.png" style="width:100%">
+                  <div class="text">S Company Logo</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img class="imgsize" src="personal/Autodesk Fusion360 Logo.png" style="width:100%">
+                  <div class="text">Autodesk Fusion360 Logo</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img class="imgsize" src="personal/decanter.png" style="width:100%">
+                  <div class="text">Decanter</div>
+                </div>
+
+                <div class="mySlides fade">              
+                  <img class="imgsize" src="personal/laptopStand.png" style="width:100%">
+                  <div class="text">Laptop's Stand</div>
+                </div>
+                <div class="mySlides fade">              
+                  <img class="imgsize post" src="personal/carsHood.png">
+                  <div class="text">Car's Hood</div>
+                </div>
             </div>
           </div>
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="personal/Autodesk Fusion360 Logo.png" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('personal/Autodesk Fusion 360 Logo.png'); " data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text order-1">
-              <h4 class="subheading">Autodesk Fusion 360 Logo</h4>
-              <h2 class="heading"><a href="portfoli-singleo.html">Even the all-powerful Pointing has no control</a></h2>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-              <p><a href="#">View Project</a></p>
-            </div>
-          </div>
-          <!--<div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="portfolio-single.html" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/work-3.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text">
-              <h4 class="subheading">Web Design</h4>
-              <h2 class="heading"><a href="portfolio-single.html">Even the all-powerful Pointing has no control</a></h2>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-              <p><a href="#">View Project</a></p>
-            </div>
-          </div>
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="portfolio-single.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/work-4.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text order-1">
-              <h4 class="subheading">Application</h4>
-              <h2 class="heading"><a href="portfoli-singleo.html">Even the all-powerful Pointing has no control</a></h2>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-              <p><a href="#">View Project</a></p>
-            </div>
-          </div>
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="portfolio-single.html" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/work-5.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text">
-              <h4 class="subheading">Animation</h4>
-              <h2 class="heading"><a href="portfoli-singleo.html">Even the all-powerful Pointing has no control</a></h2>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-              <p><a href="#">View Project</a></p>
-            </div>
-          </div>
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="portfolio-single.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/work-6.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            <div class="text order-1">
-              <h4 class="subheading">Branding</h4>
-              <h2 class="heading"><a href="portfoli-singleo.html">Even the all-powerful Pointing has no control</a></h2>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-              <p><a href="#">View Project</a></p>
-            </div>
-          </div> -->
-        </div>
         </div>
       </section>
 
@@ -325,6 +337,22 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          slides[slideIndex-1].style.display = "block";  
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
     
   </body>
 </html>
